@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Restaurant App",
+    "description": "Gestión de pedidos end-to-end: mesero → cocina → caja, con panel admin. Autenticación JWT, Socket.IO para estados en tiempo real.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.IO",
+      "Tailwind",
+      "Vercel",
+      "Render"
+    ],
+    "githubLink": "https://github.com/Emmanuel4929/restaurant-app",
+    "demoLink": "https://restaurant-app-vert-two.vercel.app",
+    "image": "/screenshots/restaurant-cover.jpg",
+    "featured": true,
+    "utm": {
+      "utm_source": "portfolio",
+      "utm_medium": "card",
+      "utm_campaign": "projects",
+      "utm_content": "restaurant-app"
+    }
+  },
+  {
+    "title": "Portafolio Personal",
+    "description": "Mi portafolio personal construido con React y Bootstrap.",
+    "technologies": ["React", "Bootstrap"],
+    "githubLink": "https://github.com/Emmanuel4929/mi-portafolio",
+    "demoLink": "https://mi-portafolio-emmanuel.vercel.app",
+    "image": "/screenshots/portfolio-cover.jpg",
+    "featured": false,
+    "utm": {
+      "utm_source": "portfolio",
+      "utm_medium": "card",
+      "utm_campaign": "projects",
+      "utm_content": "portafolio"
+    }
+  },
+  {
+    "title": "REST API – Gestión de Recursos",
+    "description": "API RESTful en desarrollo enfocada en buenas prácticas: autenticación JWT, validaciones, paginación y documentación con Swagger/OpenAPI.",
+    "technologies": ["Node.js", "Express", "MongoDB", "JWT", "Swagger"],
+    "githubLink": null,
+    "demoLink": null,
+    "image": "/screenshots/api-coming-soon.jpg",
+    "featured": false,
+    "status": "in-progress"
+  }
+]

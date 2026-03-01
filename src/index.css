@@ -1,0 +1,149 @@
+/* Animaciones con AOS */
+[data-aos] {
+  transition: all 0.5s ease;
+}
+.aos-fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.aos-fade-up.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Personalización de Bootstrap */
+:root {
+  --bs-primary: #6c63ff; /* Color personalizado */
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+/* Asegúrate de que el body y html ocupen todo el alto */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para que App ocupe todo el alto y coloque el Footer abajo */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+}
+
+/* Descripción con clamp (3 líneas) */
+.project-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-clamp: 3;
+}
+
+/* Wrapper con relación de aspecto 16:9 para evitar layout shift */
+.project-card__image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  overflow: hidden;
+}
+
+.project-card__image-wrapper .project-card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sutil hover en card */
+.project-card {
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease;
+}
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.08);
+}
+
+/* Cinta de "En desarrollo" */
+
+.ribbon {
+  position: absolute;
+  top: 12px;
+  left: -12px;
+  padding: 6px 16px;
+  font-weight: 600;
+  color: #212529;
+  background: #ffe08a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transform: rotate(-6deg);
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.ribbon-warning {
+  background: #ffc107;
+}
+/* Eleva el badge del reCAPTCHA por encima del modal */
+.grecaptcha-badge {
+  z-index: 1080 !important;
+}
+/* Enfocable solo al tabular (accesibilidad) */
+.visually-hidden-focusable.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #0d6efd; /* azul Bootstrap */
+  color: #fff;
+  padding: 8px 12px;
+  z-index: 2000;
+  border-radius: 0 0 4px 4px;
+  text-decoration: none;
+}
+.visually-hidden-focusable.skip-link:focus {
+  left: 0;
+}
+
+/* Estado activo más visible en la navbar */
+.navbar .nav-link.active {
+  font-weight: 600;
+  color: #fff !important;
+  border-bottom: 2px solid #0d6efd;
+}
+
+/*efecto blur del fondo si usas un bg semitransparente  */
+.navbar {
+  background-color: rgba(33, 37, 41, 0.8);
+  backdrop-filter: saturate(120%) blur(8px);
+}
+/* Skip link accesible (visible al enfocar con Tab) */
+.visually-hidden-focusable.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #0d6efd; /* azul Bootstrap */
+  color: #fff;
+  padding: 8px 12px;
+  z-index: 2000;
+  border-radius: 0 0 4px 4px;
+  text-decoration: none;
+}
+.visually-hidden-focusable.skip-link:focus {
+  left: 0;
+}
+
+/* Estado activo de enlaces en la navbar */
+.navbar .nav-link.active {
+  font-weight: 600;
+  color: #fff !important;
+  border-bottom: 2px solid #0d6efd;
+}

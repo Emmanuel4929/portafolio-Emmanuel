@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Charset -->
+    <meta charset="UTF-8" />
+
+    <!-- Viewport responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título -->
+    <title>Emmanuel Charry – Portafolio Web</title>
+
+    <!-- Descripción SEO -->
+    <meta
+      name="description"
+      content="Portafolio profesional de Emmanuel Charry: proyectos web, desarrollo full‑stack, React, Node.js, APIs y más."
+    />
+
+    <!-- Palabras clave -->
+    <meta
+      name="keywords"
+      content="portafolio, desarrollador web, react, node, full stack, proyectos, javascript"
+    />
+
+    <!-- Autor -->
+    <meta name="author" content="Emmanuel Charry" />
+
+    <!-- Color de tema para móviles -->
+    <meta name="theme-color" content="#0d6efd" />
+
+    <!-- OPEN GRAPH (para compartir en WhatsApp/LinkedIn/Facebook) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Emmanuel Charry – Portafolio Web" />
+    <meta
+      property="og:description"
+      content="Explora mis proyectos de desarrollo web: RestoApp, API REST y más."
+    />
+    <meta property="og:site_name" content="Portafolio de Emmanuel Charry" />
+    <!--  dominio cuando despliegue -->
+    <meta property="og:url" content="https://TU-DOMINIO/" />
+    <!-- Imagen 1200x630 (colócala en public/screenshots/portfolio-cover-og.jpg) -->
+    <meta
+      property="og:image"
+      content="https://TU-DOMINIO/screenshots/portfolio-cover-og.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- ICONOS / FAVICON -->
+    <!-- Favicon pantallas HiDPI -->
+    <link
+      rel="icon"
+      href="/screenshots/favicon-64.png"
+      type="image/png"
+      sizes="64x64"
+    />
+    <link
+      rel="icon"
+      href="/screenshots/favicon-32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+
+    <!-- Apple touch icon  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/screenshots/apple-touch-icon.png"
+    />
+
+    <!-- Bootstrap CSS: preload -> stylesheet (más rendimiento) -->
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      />
+    </noscript>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
