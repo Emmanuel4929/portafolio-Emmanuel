@@ -14,7 +14,7 @@ export default function Home() {
     // Iniciar descarga
     const link = document.createElement("a");
     link.href = "/CV.pdf";
-    link.download = "Emmanuel_Charry_CV.pdf";
+    link.download = "CV_Emmanuel_Charry.pdf";
     document.body.appendChild(link);
     link.click();
 
